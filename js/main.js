@@ -2,7 +2,7 @@
 	const gameBoard = doc.querySelector("#board");
 
 	function init(container) {
-		// Mix up numbers 1 - 15 into array to be placed in the board squares
+		// Mix up numbers 0 - 15 into array to be placed in the board squares
 		const squareVals = randomize(Array.from({length: 16}).map(Number.call, Number));
 
 		for (let i = 0; i < squareVals.length; i++) {

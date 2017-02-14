@@ -32,7 +32,7 @@ gulp.task('js', () => {
 // Watch Files For Changes
 gulp.task('watch', () => {
     gulp.watch('js/**/*.js', ['lint', 'js']);
-    gulp.watch('*.less', ['less']);
+    gulp.watch('css/**/*.less', ['less']);
 });
 
 // Default Task
