@@ -1,4 +1,5 @@
-A simple Interactive 15 Square Puzzle built on vanilla JavaScript (ECMAScript 2015).
+#Fifteen Square
+##A simple Interactive 15 Square Puzzle built on vanilla JavaScript (ECMAScript 2015).
 
 If you just cloned the folder, all the necessary files should already be built and you can simply open the app via index.html in your browser.
 
