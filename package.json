@@ -1,0 +1,22 @@
+{
+  "name": "fifteen-square",
+  "version": "0.0.1",
+  "description": "A simple interactive 15 square puzzle",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.14.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-babili": "0.0.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "jshint": "^2.9.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Joshua Hatcher",
+  "license": "MIT"
+}
