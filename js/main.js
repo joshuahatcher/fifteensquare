@@ -1,9 +1,11 @@
 (function(doc) {
 	const gameBoard = doc.querySelector("#board");
+	const NUM_SQUARES = 16;
+	const BOARD_WIDTH = Math.sqrt(NUM_SQUARES);
 
 	function init(container) {
 		// Mix up numbers 0 - 15 into array to be placed in the board squares
-		const squareVals = randomize(Array.from({length: 16}).map(Number.call, Number));
+		const squareVals = randomize(Array.from({length: NUM_SQUARES}).map(Number.call, Number));
 
 		for (let i = 0; i < squareVals.length; i++) {
 			let val = squareVals[i];
@@ -13,8 +15,8 @@
 
 			// Insert HTML structure and number into each square
 			squareContainer.className = 'square-container';
-			squareContainer.setAttribute('column', (i % 4 + 1));
-			squareContainer.setAttribute('row', Math.ceil((i + 1) / 4));
+			squareContainer.setAttribute('column', (i % BOARD_WIDTH + 1));
+			squareContainer.setAttribute('row', Math.ceil((i + 1) / BOARD_WIDTH));
 			square.className = val ? 'square' : 'square empty'; // Zero will be the empty slot
 			square.innerHTML = val;
 
